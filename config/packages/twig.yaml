@@ -1,0 +1,10 @@
+twig:
+    file_name_pattern: '*.twig'
+    globals:
+        webapp_title: 'Pushcat'
+        twitter_href: 'https://twitter.com/_UncleVersace'
+        telegram_href: 'https://t.me/popcatsolana'
+
+when@test:
+    twig:
+        strict_variables: true
