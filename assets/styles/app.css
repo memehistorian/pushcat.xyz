@@ -1,0 +1,8 @@
+html {
+    cursor: url("../images/cat_paw_smol.png"), auto;
+}
+
+
+a:hover {
+    cursor: url("../images/watermelon_cursor.png"), pointer;
+}

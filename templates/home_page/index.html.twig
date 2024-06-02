@@ -9,8 +9,67 @@
         </div>
         <div class="row">
             <div class="col">
-                <img src="{{ asset('img/testcat.jpg') }}" alt="{{ webapp_title }}">
+                <img src="{{ asset('img/pushcat.jpg') }}" alt="{{ webapp_title }}">
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <audio controls controlsList="nodownload" loop>
+                    <source src="{{ asset('sounds/pushcatcafe.mp3') }}" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" {{ stimulus_controller('click_audio')}}>
+                <audio {{ stimulus_target('click_audio', 'clickNoise') }}>
+                    <source src="{{ asset('sounds/okdesuka.mp3') }}" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Okdesuka?
+                                </button>
+                        </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                <div class="accordion-body">
+                    <strong>A 14+ year relic of cat pushing watermelon</strong>. Sisyphus smiles upon today. In the 
+                    age of memecoins we have left this beauty covered in dirt and forgotten about. In a time past, 
+                    this gem was used to ad hominem dunk on mf'ers that didn't know there shit in the linux world. 
+                    Dunk on mf'ers in web3 using a cute mf'in cat. Enter pushcat: 
+                    <strong>your argument is invalid.</strong>
+
+
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+            <div class="col">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            About project?
+                                </button>
+                        </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                    Dev wallet contains community allocation (max 1%) as an onboarding tool for my extended community (twitch, facebook, etc); to illustrate that not all of crypto is a rug. More updates to come, as we get pushing
+
+
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
     </div>
 {% endblock %}
